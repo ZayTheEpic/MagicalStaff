@@ -2,6 +2,7 @@ name: MagicalStaff
 version: 1.0.0
 api: [4.0.0, 3.0.0, 3.4.5, 3.4.4, 3.5.1, 3.5.2, 3.5.3]
 main: MagicalStaff\Main
+author: ZayDepths (zZPROGAMERZz423)
 description: "a magical plugin, that gives you a magical item"
 
 commands:
