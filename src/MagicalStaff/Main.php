@@ -81,7 +81,8 @@ class Main extends PluginBase implements Listener {
 			$snowball = Entity::createEntity("Snowball", $player->getlevel(), $nbt, $player);
 			$snowball->setMotion($snowball->getMotion()->multiply($height));
 			$snowball->spawnToAll();
-			$player->getLevel()->addSound(new BlazeShootSound(new Vector3($player->x, $player->y, $player->z, $player->getLevel())));
+                        $level = $player->getLevel();
+			$level->addSound(new BlazeShootSound($player));
 		} elseif ($item->getCustomName() === "§cBack"){ // Remove the items
 		  $player = $event->getPlayer();
       $inventory = $player->getInventory();
